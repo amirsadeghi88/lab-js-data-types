@@ -57,14 +57,13 @@ console.log(totalAmount);
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
-let randMax= 10;
-let randMin= 1;
-const rand= Math.random(randMin, randMax); // This will generate a random number between 0 and 1
+const randomNumber = Math.floor(Math.random(1, 10) * 10) + 1;
+
 
 
 // Print the generated random number
-console.log(rand);
 
+console.log(randomNumber);
 
 /*******************************************
     Iteration 3.1 | Booleans
@@ -75,16 +74,24 @@ const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
-false
+//false
+console.log(a && b); // Print the result of expression1
 const expression2 = a || b;
-true
+//true
+console.log(a || b); // Print the result of expression2
 const expression3 = !a && b;
-false
+//false
+console.log(!a && b); // Print the result of expression3
 const expression4 = !(a && b);
-true
+//true
+console.log(!(a && b)); // Print the result of expression4
 const expression5 = !a || !b;
-true
+//true
+console.log(!a || !b); // Print the result of expression5
+// Print the result of expression6
 const expression6 = !(a || b);
-false
+//false
+console.log(!(a || b)); // Print the result of expression6
 const expression7 = a && a;
-true
+//true
+console.log(a && a); // Print the result of expression7
